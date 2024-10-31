@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mala Cream Dim Sum</title>
+    <link rel="stylesheet" href="Dimsum.css">
+</head>
+<body>
+
+    <!-- Header der Webseite. Behinhaltet Cookie Logo, Cookies Überschrift
+    und die beiden Nav links oben -->
+    <header>
+        <nav class="nav-top">
+            <div class="nav-container">
+                <img width="80px" height="80px" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTEhERFRUXGRcSFRcXFxUXFxgYFxgWGBUVGBYZHCggGBonGxcXITEhJSkrLy4uGSAzODMtNygtLisBCgoKDg0OGxAQGzIlICUtLS0tLTAtLS0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAwQGBQECB//EAEoQAAIBAgMDCAUHCQcDBQAAAAECAwARBBIhBTFBBhMiUWFxgZEyQnOhsRQjUoKzwdEHMzRTYoOSorIWQ1RjcpPCNcPEFRcktNL/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQMEAgUG/8QANREAAgEDAgMFBgUFAQEAAAAAAAECAwQRITESQVEFEzJxgRQiQmGhsTM0kdHwFVLB4fEjYv/aAAwDAQACEQMRAD8A/caAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgOftzaq4aPnGVm1CgC2833k7hpXFSagss0W1u68+BPBxMby0jEIeJbyE5cjerbeTbeN1rfcaplcrhyjdS7KqOq4z0XXqaHZeL52GOQjLnUNbqvV8JcUUzzq1Pu6jh0ZaroqFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAVNqYFZ4mibcw39R3hvA1zOKksMtoVpUqinHkfmmG2JK2J+TkWYHpHgFG9x2W3d4rzo0m58J9RO9hGh3y9PPofqcMQVQqiwUBQOoAWAr0ksHycm5PLPupIFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKA+OaXNmsM1st7a2GoF+rU1GOZOXjAmlVFLMyqo3kkADvJo3jcRi5PCWpQ2ttuKCMSMcwYgKFsc3G4N7WtxridSMFlmi3talabhHdb5LuFnEiK67mAYdxFxXaeVlFE4uMnF8iWpORQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKA50u28OsvMtKA+mhva51AzWsDu41w6kVLhzqaI2tWVPvFHQq8ouUK4XKMud21y3tZesmx8O41xVrKBbZ2MrnLTwkdXBYkSRpIt7MoYX32IvrVsXlZMtSDhJxfIp8o8GZcNKg3kXHaVIYDxItXFWPFBoutKvdVozfU/NMGkk7RQAki5Cj6Oaxc92l/OvOjxTaifUVXToKVb5fr0P1nDxBFVF3KAo7gLCvUSwsHyEpOTbfMkqTkUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgMNy72MQ3yhBdTYSDqI0DdxFh4dtYrmnrxI97sq7WO5l6fsZqMS4iREuWc5YwTrYDQX7ALnzrOuKckj1Jd3bU5SSwt/U/WcLAI0VF3KoUdwFq9RLCwfHzm5ycnzJak5OTszYUcM0sq73Og+gDqwHe3usKqhSUZOSNVa7nVpxpvZfU61WmUUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAfLoCCCAQdCDqCDvBFAnjVHJ2Rydiw8jyJcltFB9QcVB7/AHW8aoUYwbaNlxe1K8FCXL6+Z2KtMYoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAU8XtWCI5ZJo1Y7lLDMe5d58BTJ0oyeyOdjOVUEYuVl+soh8jiGQHwrlyR3GjJnPl5aDfHEp73kb7CKRffVMrmlHeS/UujaTf8Awhk5Vzn0IwP3TN9pJFVL7QoL4ixWM+hCOU2LPqEfuYl/8pqrfalHr9Dv2B/x/wCgdv4r9ryhH41z/VaP8RP9PYG38V1t5Qn8Kf1Wj/EP6eweU2LHqsf3ULf+UtdLtSj1+g9gf8f+iWLlXOPTjH+0y/Zyy1Yu0KD+IrdjMni5Z/TiQDseVftoY1/mq6N1SltJfqVytJr/AIX8FyrgkFwsv1Qs3/12kt41cpIplRkjo4Xa0EjZUmjLcUzAOO9D0h4iusnDhJbou0ORQCgFAKAUAoBQCgFAKAUAoBQFfG46OJc0jhQTYdbH6KqNWbsAJoSot7GZx/LA3KwR6i4uwzMD2xqwCd0jxt2Vnq3NOn4maqdpKRxmfaOKVHCkJJlKl5AcqvbptDG0YygG+UmUndpvB1G9i1QpQ0e/85k2y+SshzCeWVFViqJAywpJx51kjAFjwQ3trctcWrTeuWTKqvhX66lSLBHDkK2HyXd41lAiAkK52ViEOYFkUnVQLg9l/HvLapHM+LK8zfRrxniPMtV5hoFAKAUAoBQCgANMYBWxyQ2BmEVuBky7+wtVtOVTPuZ9CHjmeNhldbB2KHcMwlj8EkzJ5CtMb64pvDefMqdCm+RNh8RiIvzchtporFdOrI+ePwVY+8VtpdrL41+hnnZRex18DyvYELPHqbDQc21zwCMxR+5JGY/Rr06V1Tq+FmCraSgaXA7QimBMbg20YahlO+zowDIewgGtJlcXHctUIFAKAUAoBQCgFAKAUBweUPKAQ3SOxk0BJBZULC6rlBBkkI1CAjQXYqNarnUjBZZdSoubMk0byMXmZrm4IzXYjTR3FrLprGmVNTcN6R8G57SnN8NPT5nsUrWMFqT7NwkkwAgVEiG6Rh0Lf5UYtnHbcL1Zq5o2Mp+9Vf7k1bmMNFqzS7HwQhjESs7Kt7FrX1JNgAAAovYDgABXrLGyPNm3J5ZcDb+ypOcHP2jsuOcqWaRXTMFZWtbNa5ym6tuGpB99czjGpHhksoshOVN5icXGbOnhuSOejHrIpDqP2otc3euv7IrzK/Z2mab9DbSu09JaFJsfELfOx9IZl6QJI6wBvHbXndzU6GvKK20NrRpGzKylhoBrvJAF/Psq2lbTlL3loMp6I5MOPxKtq4Ycc4WxPYEClfM91WyjRa2/Q0+zs6WF29FlPPPHEykqQzAA8QVJ3ggg9mo4VXK1nvBNookuF4ZaG0oiVCvnLaKqAuW0v0QoNxYb91cwtK0nhRK5Tills6eC2PJMbzIUiGuRj0pTwzAHox/snVtxAAIb0rWy7v3p6sx1rpPSH6nRXYOGb+4RCNM0Y5pu7NHlNuy9bsKfiWTLxyj4WWINlww3McYDHQuSXcjqLuSxHZemFFYisEccpv3mVMfsIN85FlilJu2nQk7JFFul1PvHaNKqrUI1o4lv1LKdd03pscrEYaeMXkh6PExNzlh1lSqsR3Ka86p2bNLMXk2wu4SeHoR9F19VlYdhUg+4ivO1i+hpIOZZCGiYgroozWKjqjksSg3dAhozbVeNelbdpThpU1X1M1W2jNaGp5P8oxLaOXRySitbLmYC5jdbnm5ba5bkMvSUkXC+/TqxqLMWePWoOmzR1aUCgFAKAUAoBQCgKW2MYYoWdQC2ioDuLuwSMHsLsoqG8I6hHieDBRJd2a5bKzxqW3khiJZTb1pHUtceqEAtavnO0rhynwLZfc922pqMOLqWsBgflEhVvzUds4+m5AYIf2ACCRxzKN2YHqwt9O8l6fuc3NbhXCjXZRa3CvVPNyAKA8VbEnrpgNnuXW9BnkR4qbIjv9FWf+EE/dUrcg/NkwM6i0qyNm6ZMSHJIzXZncJdixJ1DdHqHGvK72nUk5p6/Pl5cj1ouCWGQY/Zl1BaF47sArkJvINgVzZ7eAruFSLbSeTuM450InwDkZSsLKOssN27TKfjVfdxzlNmzv8ATDRJg8Axkc8zzr5UuF5uyi7W1kZS19dQPVrvijTglxY/nyM9WqnLLL8WyJ2uioIkI6auynLe+WWNIycsgYXBBW9jxAIonXpLE85a2a+z+RnlOL2NxsPFNJAjObsM0bHddo3aNmtwuVJ8a9eEuKCkuaTPNqR4ZNF+ujgUAoCJ4yTe9Q1qdppIze0NlyROxjjZ4mJeyWLRk6sMm9kJuRluQWIta1sF3ZOrLjhvzRst7lJcMypFKGF1NxqOIIINiCDqCDoQdRXjzhKD4ZLDNyaayiHEooOc3y6JLY2JjzA5geDRn5xW3gqbWua3dn13Coocn9ym4p8UM80bzYmJZ4hzlucQtFIQLXZCVLAcAwAYDgGFfTJ5R4E1h6F+pORQCgFAKAUAoDM8u9qLBDHdSxM0DWG8JHNE0jkcQNBpxZa4m0kX28HKXozPxLlZ4zvV2t2o7F4mHWCjDXrBHCvl7+m41m+up7dvNSpo7nJVLQKfpZpD9d2b3XA8K9mikopLojzrh5mzs1aUFZMfEZWhEimVQGZL9IA2sSPEeY66nGmScPGSzUEFbEY+JHjjeRVeS4jUnVioubCpwyUm1k82qt4JR1xyD+U0W4W5nYWvLhz1wy/1Yevl4/hy81/k9B7sbcwXOmBbuBzhJZbXUczML6gjeQNRxqy2qd2pP5f5RMZNaog/9APDEN4ohPusPdVvtv8A8/U772R7svAc1iHvI7/NIQWyi13fOAFUfRTfffXNat3lJaY1OJTcty3hzaTEMeBQX/ZEan4lqoqfhxS+f3OUdbk7GRhobixZBIw6mk+cYebGvpYR4YqPRJGKo8ybLkOJRiyqwLKbMOKnhcbx2HjXeDklqCCvgsbHMuaJ1dblbqbi66EVLWCWmtyxUEEcwNtKhnUcczM7YgyYgH9amY9WeIhSSesq6DuSvN7Sp+7Gfob7OecxKGNi5xeaG+Y8yPr3DHwXM3cprFZ03OtHHLU01ZqMGzS8j9rJM+KCgi0xYE7nQqqq6nqOQ+YPrCvqabTR4Vem44b6GlqwoFAKAUAoBQCgMTy0f543t83HBN3IMTmmPdljU+FY7vVJeZvs9NfmcueHm7AsEVBlikN8iJe/MTW3RD1ZP7vuvmwRcLmHd1N+T/n8ZrxKnLijz3R1OSOLZU5idebmQt0eDIWzI8Z9dAGC5hxGtt1bVHhSRmq4k+KJpakoIUwyBi4Vc7AKz2GYgXspa1yBc6dtTklshkwTGUPz0oXQmMEZTbwvbrrnGpYqiUOHhWevMnmwyMVZlUslyjEAstxY5SRdbjTSuslaeCrt6UphZ2G8RSEd+Q299qji4dSYrMkjmQYUAo+t0Roh1WYoT4/NrXykajcMdXk3y3PMRjcrogRnLEhsuX5sWvmcXuBVkaWYuTeMfXyGHjJO86jNdlGUXa5HRHWeqq1CTxhbkEGIxgSVFKGzBvnOiEW1uiSTe54CrIU3KDae3IlJvYsTLdSOyqJPTIW5a5PMThYLnURorH9pVCt7wa+tjLiSfVGGaxJkxwgTnHiROdYXzOT0iLlVZ9SFuTYDQX0FdZzuc56nxg5MQW+djhRNSCrs7cMgsVAB9K57rVLxyGhZgw6oLIqqCS1lAAuxuxsBvJJJPbUN5DeSWoIFAcflHzTKIzmM3pwrHYyhhpmAOgXWxLWWzWJF6iUFOLi1oW05Si+JGdw0bNcZlZyDHLLHfIi6Z4YG3sxIs0nC1hqOjj/87WPDDVs1+9VactuSOjyUKjEplsM4xWUDQZIzhozYdWZBbvrZZ5xh9DNear9DdVuPOFAKAUAoBQCgMTyqQjGCRVzFIEBTTpxs8wkj10ubAjtUAkAmsN5PhcU+Z6FnHig/MoYWVUCrmzRNpDIb68BE5OokHo66m30rivOrUnnij6m2Ms6Pc+nwdhlTKUBzCJ75AfpRsvSgbtQ2FycpNdUryUdJao5nRUtVoyxBtiSLRmsBwxB6PD0cWgIy9XOqGPXW6FWnU2ZlnRkuX6fsdZdtoBmlSSIb8xXPGR9LnYyyAd5B7Ks4Srh6FccsNn/43Df7i/jUYZ33NToef2x2fwxkLditmPktzTHUdzU6HJ23yuhkTmoVkfO0aFyMigGRAdG6RNr+rbtrPWqxUJJPXD+xdTtppqT0wdiLcK+Xp+FFz3PoKL3sL9fGu8vGBkgmwMbsHZFLC1iR9E3W/XY6i+413GrOKwmQTsgO8A9+tcJtbE5wG3GuXsDLYTlhJh88JwruqSSgMsiC4MjsOi1rWBtv4V9Hb14d1DL5L7HMrbifEi3/AO4Y44LFeHMn/u1f30P7kceyS6nyfyip/hMX4ov3ManvI/3IeyMrYj8pgUX+SygdbMiDzINSmnsx7KybBcrsbiBeDBG1rhySUt15yEU/xVLUiHTpx3kfUeOxTm74vN1x4NEZd+58RKCq9qqS3VUSnCC95hQz4Y+rLCYUkENZFb0o0Zmz+2mbpzdVjYWNiDWKret6Q0LY0UtXqzyeW+aNGCBB87JoFhW19+7Pl3DhoTpYGqlScnxS/wClkpYLPJqMHGROEKKIZIokIIKRLzVrg6hmOp42Cg6g16NrPNRpGO6jilr1N3XoHmigFAKAUAoBQGS2/wDpZ9jF9pNXl9pfD6npWPhZypsKRmKBDn0kjcXil4dIcGtpmHZcNYAYaddx0e32NkoJkMMhByoSDwgmNn/czaiQccpJOupXdV0qcKmq/nmjjicfEWY8YubI2aN/oOMrHry8H71JHbWaVKUdSxST2C4NVJaPNExNyY2KXPWwXRvrA11C4qQ2ZEoRluiDFYDnDeRcPN1tLCok8JYilvI1pjfP4kV9zjwto5GI5LYY6nD4hD/kYkSDyxAFvA1cruk99BiquafoU5eScAIKzTRsNVz4aWUgjUHNE5XQ11x05acQU6i3j9TULtMqNZcH9eWSE/wvEfjXmx7KiliM/wCfqcOo+cWfOz8WVzgNhWBdnXJiY2Iz9Jgb29cse4irKnZsp4alyOe9XR/oXflj/qSe6XD/AHyVV/Sqn9y+pPfRK+OlkdQoiy9JCxMuH9FWDMBaQ77W8TXdPsycXltfUjvYn3LtGwN/k6/68TEvwvXD7Jm14kFWXRmTk2VI7u3y3Z4DMzAI7zEAnQWVRfSt8LSnGKjJ7LBcrhraLLGH2MPWxLueqPBzJ5PK+WuXRt1vL6nTrVXtH6luLYsf6rFP7aaKJfD5OrN5mueO2jssnLdZ80i7h8BlN0jw0R4MsfOSjummLX/hqHepeCJHc58UmyxLhFfWUvMd/wA4xZbjcQnoA9yiqJ3NSXM7jTjHZCXFopyXJbgiAs9uHRXUDtNh21xGnKex02kVsRK18rlkNr8zEQ07A7s7g5IRvF79zA1ojRjDWX+v9nHG3pEliwpIXOqKinMkKegpvfMxOsj31ubAHhfpGupXzpEmMMa8zp7G/S4vZzfGKtPZvjfkZ738P1NhXsHlCgFAKAUAoBQGR2/+mH2MX2k9eX2l8PqenY+F+ZWryTaRzRKwyuqsD6rAEHwO+uotrVAgfCNlKq+ZDvjmXno/JjmHdmsOqr43LXiOHBMgEZX1Jo/ZOJo/GOUZlH7KDxqzipT3/b7EYmj2PGm4HO4dyeDF8NJ4RSAk+YqHbxfhf+fsONrdFkzuNXgnXuUSX7uaLH3VW7eXJolVIs+G2lCPSkVOyT5s+T2NcOjUXI6TTJ4sQrei6t3MD8K44ZLkSfTRA71B7xTLBGcHHxjT+Ffwpxy6gDBx/q4/4V/CnHLqCRYQNygdwFMtg8kmVfSZR3kD404W+QK42nCdFlRj1IQ58lua7VGb5ENpH2uIZvQgnb6hj+1y10reXM5c4rmV5cYwJUvh4z1ZzNL/ALMYBPg1Wq2S3f8Aj7kd5nZHxlZ+GIk49Jvk0Xkt5fBgRU5pQ/mf9DE38ieLCsFy5ljT6EC80Netwc5PaCt+quJXL+FfqFTXMsQQKgsiqo32Atqd5PWe2s8pOTy2WElcgn2N+lxezm+MVel2b435GS9/D9TYV7B5QoBQCgFAKAUBktv/AKWfYxfaT15XaXw+p6dj4X5lWvKNpiOWuFM2NwkSuULK+Vxe6nU3FiPo9delaSUKM5NHS2LOytvTQSjC4+1z+amHovwAJ046X0OouOJ4qUIVI95R9URjoa6sBB46gixAI6jqKlNrYFUbOiHopk9mzRfZkVYq01zIaTJOZkHo4idfFH98iMffXauJc0jnu4kM2DZvSMD+0w6P/SVrtXPy+pHdIiGzbf3WB8IGT4SGp9pXQcD6n18iP6qDwaUfA09oj0+xHA+o+Rn9VB/FMfvp7RHp9hwPqfLbOv8A3WC+tCz/ABkFPaY9CeB9SSHBFd3yZPZ4dFPvZqh3Xy+o7tdSfmpPWxMxHUOaQeaID764dw+SRPdxI22dGfTDSe0d5B5OTXLrzfM6UUizHGFFlAUdQAA8hVTbe5J6T791MA5XKXbq4SNZGUvmYIFBsdxJN+wD4VfQoOtLCJSydVGBAI3HUeNUNYeCD2oBPsb9Li9nN8Yq9Ls3xvyMl7+H6mwr2DyhQCgFAKAUAoDJbf8A0s+xi+0nryu0vh9T07HwvzKteUbTJbZ12tgx1I5/lm/Ct9L8tM6WzO1yi2QuKgaNgM29G+i/A93A9hNZ6FZ0p5Xqcp4KXIfaTTYYCS/OREwtff0QMpPbYgHtBru8pqFTK2epLKuy8Q7bVxSl2KLGoC3OUG0JuBuBuW8zVlSKVtF45/uS9kdvbu1BhoGmZS2XKAoNrlmCjXhvv4Vmo0u9moohLJPs/FrNEkq+i6hxfeLjce0bvCuZwcJOLIINk7YixGcxMSEbISRa54EdYPXXVWjKnji5gv1UBQCgIMVjYo7c5JGl92ZlW/dc13GEpbIEkMyuAyMrKdxUgg+IqHFp4YIsbjo4QGldUBIQFjYFjew9x8qmEJTeIoFiuQcjk/tr5TzwKZDFI0Vr3uBuO4WOh07Kvr0e74dd1klrBmfyizumIwzx3zoruvHcVJ06rA37L1ssYp05J7MlbFDlPtD5e8fNejHh3xDjfZrXdD2jKg+tVtvT7hPi5vAWhtuSmJ5zBwNe5yBCe1Ogfetebcx4askQ9zrVQQT7G/S4vZzfGKvS7N8b8jJe/h+psK9g8oUAoBQCgFAKAyO3/wBMb2EX2k9eV2l8PqenY+F+ZWryjaZLan/V8L7JvhPW+n+Vl5krY1t6wkGS/J4cy4mQei87Fe70v+Q8q3X2jiuiJZ7yf12ljj2IPcB/xpX/AC9MPZHv5RnJgijG+SZV9zfflqLFe+5dEEZ/D7ZeDCTYIXM4lbDxgXvlckMV8cwH+ta1yoqdVVeWMk41OryBw5gnxWHYglObOm71r28xVF7JThGa+ZDNtXmkCgIMdiObikktfIjPbrygm3uruEeKSQMdyW5PRYqL5Vis00khY6swAAYrbokcQdNwFgBW+4uJUpd3T0SOm+he2fsCTC4sHDA/JpAedUsOi2tiLm7cNd9iR1VXOvGrS9/xLYjOSP8AKQLxYcdc6/0OPvqbDxS8iVzNcawnJkeSYyY7aCcC6yDxaRj/AFit1zrRpsl7I92/rtPBDf0X+D/hShpbzYWzLmweSqYd5yGzLKMira2RDe63vrvA+qK4rXTqKK6BvJV/JzIRh5IW3xSsh8bH+rNXV8vfUuqEjV1hIJ9jfpcXs5vjFXpdm+N+Rkvfw/U2FeweUKAUAoBQCgFAZPlEtsWCfXhAX927ZvtU868ztJPEWelYv3WipXkG4yW1P+r4X2TfCet9P8rLzJ5H1yq29f8A+JhfnJ5OgcuoQH0rng1r9wuTwvFtb4/9KmiQSO3sHZgw0CQg3yjpHrY6se6507LVnrVXUm5EPU4XJTXG7Qb9tV8mkH3VpudKNNEvYcq/nMdgIupzKR/pKsP6Gpbe7RnILY6B5NR/LflZbgDktpnAy5736uFt+tVe0y7nuxnQ52CGTbEw4SQhvECIf8Wq2fvWqfRk8jXVgORQHy6Aggi4III6wdCKlPDyDEQSz7LJR0aXCFsyuvpR34HgD2GwO8G5Ir0ZKF0sp4kdbmt2ZtSHELnhkDDjwKnqZTqDWKpSnTeJI5M7+Uc2iw56p1/oc/dWqw8UvI6XM1xrCcmS2VptfFD6Uat5CH8a3VNbWPmS9htjXa2DHVG5/lmpS/LTJWzNbWA5MjyfHNbSxkW4SATjzDH3ynyrfX9+3hLpodPY11YDksbDF8YlvVilJ7LtEB56+Rr1OzU8yZjvX7iXzNfXrHligFAKAUAoBQHK5QbMM0YKECWM54ydxNiGRreqwJHGxsbGwqqtSVSDiy6hVdOWTMYefNfQqynK6NoyMN6sOvtGhBBBIINfPVKcqcuGR7KkpLKOPyg5MpinRzJJGVBToW1U8Nd28+dXULl0k1jJ0ngtbF2DBhRaFLE6Fzq57zwHYLCuKtedXxMN5OnVBBkuRGs+PbrnI8nl/Gt95pGC+R0zwjnNsj/Jg8iQfump4bTzY5GurAcmS2p0NrYVuDxtGfAS/itb6fvWsl0ZPI1tYCBQEOKxSRqXkdUUWuzEAC5sNT211GLk8RQJdCOsHyIqNgYnlLgRgZY8bhxkXMEmRfRKnUkDhex068p669GhPv4ulP0OlroXfyjw58EWHqujg990v/PVdi8VcMiO5pcJOHRHG5lVx9YA/fWOaxJogy2xzn2rinXckaxHv+bFvNGHhW2quG2inzJex7tHXbGG7IWPumpT/Ky8xyNbWAgpnZkXP/KMvzuTm73Nst77t1+2rO9lwcHIFieYKLm+8AAAlmJ3KqjVmPACohCU3wx3IbSWWaLk5stolaSQDnZLFhocirfJECN9rsSfpM1tLV9Bb0VShwnj3FbvJfI7NXlAoBQCgFAKAUAoDlbX2IkxzgmOUCwkUC9hqFddzpcnQ7rmxBN6qq0YVViSLqVaVN6GbxiSwfn0yr+tW7Rd7HfF9bQXsGNeRWsZw1jqj06VxCfyZ6rAgEEEHUEbj41iawXntQCns7ZkUBkMa25xzI+pN2O/fuG/TtqypVlPHFy0BT2fsXm8VPiS4bnQoC2tlAAvc319EeVWTrcVKMMbE5OxWcgyfLFSuJwEoB0l5s/WaPTyDe+t1q805xfQlGsrCQKA5XKjZpxGFkiX0iAydrKQwHja3jV9tU7uopMlPDOZya5UQNCiTSpFLGBG4kIS5XS4zW6tRvBvV1xazU24rKYaOfyv2smLCYPCsJXkYFmXVVA45tx11JG4A1ba0pUW6tTTBK01NdjMAkkLQtfKy82evdYEdo0NYY1HGfGjkyuG2ftaBBBE+HZBdUc+ko4bxp3Wa1bZVLab45J5OtDucmdiDCxkFs8jnPI/WerXWwud+8knjWa4r97LTRLYhsvPs6IzLOUHOqpRWudFN9LXtxOvaarVSSjwZ0ILVcAjwpeY2w6c5/mE5YR+8sc3cgY9dq2UbKpPV6Ipq14U9zR7H2EsR5x252a1s5FlUHeI0ucgPE3JPEkWA9ejQhSWInmVq8qnkdirigUAoBQCgFAKAUAoBQCgONi+TUDksgaFzqWiIW5O8mMgox7SpNVVKFOp4kXU7ipDZnMn2FiU9BoZh25ont/MrH+EVhn2avgZrhfL4kUZecT85h50+pzg780RYAd9qyTsaseWTTG4py2ZFDjYnOVZI2I3gMCw7xvFZpU5x3RanksWrkkUAqAKAUBzNocn8LM2aWBGbiwzKT3lSCfGr4XFSCwmMk+z9mQwAiGJEvvIGp723nxridWc/EwXKrBBPjI00eSNSdwZlBPcCda7jTlLZA+4nd/zcM8nchUHueTKp860Qsq0uWCmVenHdl6DYmKf0uZhHaTK/aCoyqp7czVrh2avjZnnexXhR0sNyYgFjLnnP+aQV/2lATTgSpPbW6nb06fhRlnc1J88HaAq4zntAKAUAoBQCgFAKAUAoBQCgFAKAUBBisJHILSRo46nUMPIihKbWxz25M4TcIFT2ZaL7Miq3Sg90ixV6i5kTcl4fVfEL+9ZvtM1VO0ov4SxXdXqQnkqOGLxXlhiPsb1w7Gi+R2r2p0Q/suf8XN4rD9yVHsFH5j22fRD+y5/xU3gkP8A+KewUfmPbZ9EByV68XivLDD/ALNSrGj0DvanREq8l4vWkxDfvCv2YWu1aUV8Jw7ur1Jk5M4Qb4s/tHkl90jGrVRpraKOHcVHzL2EwEUQtFFHGOpFVfgKsKnJvdlmhAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKA//9k=" alt="">
+                <h1 class="website-title">Dim Sum</h1>
+                <ul>
+                    <li><a class="nav-link-top" href="#nutritions">Nutritions</a></li>
+                    <li><a class="nav-link-top" href="#directions">Recipe</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!--Erstes Bild der Webseite, bestehend aus dem Background image und den Text,
+mit der passenden Überschrift. Dazu kommt noch der View Recipe Button-->
+    <section class="intro-text-section">  
+        <figure class="intro-text-container">
+            <h1 class="intro-header">Mala Cream Dim Sum</h1>
+            <p class="intro-text">You are here to experience the Dim Sum</p>
+            <div class="recipe-button">
+                    <a href="" class="view-recipe-button">View Recipe</a>
+            </div>
+        </figure>
+    </section>
+<!-- diese Section wird das Rezept mit samt dem Cookie Bild darstellen -->
+    <section class="recipe-section">
+        <div class="recipe-container">
+             <div class="recipe-nav-container">
+                 <nav class="recipe-nav">
+                     <ul>
+                         <li><a id="save-button"  class="recipe-nav-link" href="">Save</a></li>
+                         <li><a class="recipe-nav-link" href="#Ingredients">Ingredients</a></li>
+                         <li><a class="recipe-nav-link" href="#directions">Recipe</a></li>
+                         <li><a id="tips-button" class="recipe-nav-link" href="#nutritions">nutritions</a></li>
+                     </ul>
+                 </nav>
+             </div>
+        <div class="recipe-img-container"><img class="recipe-img" src="https://images.squarespace-cdn.com/content/v1/66022bdf07966e57af2507bb/24bab9d0-94ed-47bb-87b9-ff1778640a23/IMG_1853.jpg?format=1500w" alt=""></div>
+        
+         <div class="recipe-details-container">
+             <div class="recipe-details-content">
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Prep Time:</div>
+                    <div class="recipe-details-value">30 mins</div>
+                </div>
+
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Cook Time:</div>
+                    <div class="recipe-details-value">60 mins</div>
+                </div>
+
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Total Time:</div>
+                    <div class="recipe-details-value">80 mins</div>
+                </div>
+
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Serving:</div>
+                    <div class="recipe-details-value">10</div>
+                </div>
+
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Taste:</div>
+                    <div class="recipe-details-value">10/10</div>
+                </div>
+                <div class="recipe-items">
+                    <div class="recipe-details-label"></div>
+                    <div class="recipe-details-value"></div>
+                </div>
+                <div class="jump-to-nutrition-container">
+                    <span><a class="jump-to-nutrition-content" href="#nutritions">Jump to Nutrition</a></span>
+                </div>
+              </div>
+         </div>
+         <div class="main-recipe">
+            <div class="main-recipe-container">
+             <div class="ingredients-list-container">
+                <div class="ingredients-head">
+            <h1 id="Ingredients">Mala Cream Dim Sum Ingredients</h1>
+            <p>These are the ingredients you’ll need to make this tasty Dim Sum recipe:</p>
+        </div>
+        <h1 class="mala-oil-title">Mala Oil:</h1>
+            <ul class="ingredient-list">
+                <li><strong>Chilli:  </strong> 3-4 dried chilis (or 1.5 tsp Korean gochugaru) </li>
+                <li><strong>Sichuan:  </strong> 3 tsp  sichuan/szechuan peppercorns (aka prickly ash) </li>
+                <li><strong>Anise:  </strong>1 star of anise </li>
+                <li><strong>Cumin Seeds:  </strong> 1/4 tsp cumin seeds </li>
+                <li class="leaveners"><strong>Oil:  </strong> 1/3 cup oil </li>
+                <li><strong>Salt:  </strong>1/4 tsp salt </li>
+            </ul>
+
+            <h1 class="mala-oil-title">Mala Cream Sauce:</h1>
+            <ul class="ingredient-list">
+                <li><strong>Oil:  </strong> 2 tsp oil </li>
+                <li><strong>Shallot:  </strong> 1 shallot, minced </li>
+                <li><strong>Garlic:  </strong>2 cloves garlic, minced </li>
+                <li><strong>Shaoxing Wine:  </strong> 1 tbsp Shaoxing Wine (or cooking wine) </li>
+                <li class="leaveners"><strong>Heavy Cream:  </strong> 1 cup heavy cream </li>
+                <li><strong>Homemade mala oil:  </strong>2-3 tbsp homemade mala oil (recipe above) </li>
+                <li><strong>Brown Sugar:  </strong> 1 tsp brown sugar </li>
+                <li><strong>Salted Butter:  </strong> 1 tbsp salted butter </li>
+                <li><strong>Msg:  </strong>1/4 tsp msg </li>
+
+             <h1 class="mala-oil-title">Fried Shrimp Balls:</h1>
+             <ul class="ingredient-list">
+                 <li><strong>Shrimp:  </strong> 400g shrimp, peeled and deveined </li>
+                 <li><strong>Lotus root:  </strong> 100g lotus root, peeled (optional* see note at the end) </li>
+                 <li><strong>Green onions:  </strong>2 green onions, thinly sliced </li>
+                 <li><strong>Light Soy Sauce:  </strong> 1 tbsp light soy sauce </li>
+                 <li class="leaveners"><strong>Shaoxing Wine:  </strong> 1 tbsp Shaoxing Wine or cooking wine </li>
+                 <li><strong>Sugar:  </strong>1 tsp sugar </li>
+                 <li><strong>White pepper:  </strong>1/4 tsp white pepper </li>
+                 <li><strong>Salt:  </strong> 1/4 tsp salt </li>
+                 <li><strong>Corn starch:  </strong>2 tbsp corn starch </li>
+                 <li><strong>Spring roll wrappers:  </strong> 10 spring roll wrappers </li>
+                 <li><strong>Neutral Oil:  </strong>1L neutral oil, for frying </li>
+
+            </div>
+            </div>
+         </div>
+         <div class="recipe-steps">
+            <div class="recipe-steps-container">
+                <div class="recipe-steps-content">
+                <div class="step-by-step">
+                    <h1 id="directions">Directions</h1>
+                    <p><strong>Step 1.         </strong>In a small saucepan add the 1/3 cup of oil and place over high heat. 
+                        Place the dried chilis, sichuan peppercorns, star of anise, cumin seeds in a coffee grinder. Blend until it becomes a fine powder.  Pour the powder into a medium heatproof bowl.
+                        Once the oil just starts to smoke, remove it from the heat and pour it over the mala spice mix. Careful as this will bubble up rapidly. Give it a good stir, add the salt. Set aside and allow the oil to cool.</p>
+                    <img class="steps-img" width="700" height=600 src="Img/Oilsauce.png" alt="">
+                </div>
+                <div class="step-by-step">
+                    <p><strong>Step 2.         </strong>Finely mince your shallot and garlic. Add them to a cold pan with oil. Turn the heat to medium. Allow the aromatics to start to sizzle. Once they start browning and sticking to the bottom, deglaze the pan with your shaoxing wine. 
+                        Let the alcohol cook out, then add your cream. Turn the heat to low, add your brown sugar, msg and mala oil. Bring it to a simmer, stirring the cream constantly. Allow it to thicken slightly. Add the butter. Taste to see if it is salty/spicy enough and adjust to your liking. As well, if it gets too thick, add some water to thin it out. Do not over cook! The sauce will start to split.
+                        Remove from the heat and pour the sauce through a fine mesh strainer and into a bowl. Discard what was caught in the strainer. 
+        
+                        Let the cream sauce cool at room temperature while you work on the Fried Shrimp Balls.</p>
+                    <img class="steps-img" width="600" height="600" src="Img/Creamsauce.png" alt="">
+                </div>
+                <div class="step-by-step">
+                    <p><Strong>Step 3.         </Strong>Prepare your shrimp by peeling and deveining. If wet, place them on a paper towel and blot to dry them off.
+
+                        Place your shrimp on a clean cutting board. Using a knife (or two!), start chopping the shrimp into small pieces. After about a dozen passes over the shrimp with your knife, reserve about 100g of shrimp pieces that are a bit larger in size. (This so the shrimp balls have some texture and larger shrimp chunks inside!).
+                        Keep chopping the remaining shrimp until it becomes a fine paste. Place the fine shrimp paste as well as the larger chunks you set aside earlier into a medium bowl.
+                        (Clean your cutting board.)
+                        
+                        Wash and peel your lotus root. Slice it into 1/4” thick rounds. Stack the rounds and proceed to cut into matchstick-like pieces. Rotate the matchsticks 90 degrees, and roughly dice the lotus root. Add it to your bowl with the shrimp.</p>
+                    <img class="steps-img" width="800" height="700" src="Img/Shrimp.png" alt="">
+                </div>
+                <div class="step-by-step">
+                    <p><strong>Step 4.         </strong>To the same bowl, add your green onion, soy sauce, Shaoxing wine, sugar, white pepper, salt and corn starch. 
+                        Mix to combine.
+                        Refrigerate for 30 minutes to 1 hour.</p>
+                    <img class="steps-img" width="700" height="700" src="Img/Greenonion.png" alt="">
+                </div>
+
+                <div class="step-by-step">
+                    <p><strong>Step 5.         While the shrimp paste is chilling, prepare your spring roll wrappers.</strong>
+
+                        Separate 10 sheets of spring roll papers. Lay 5 wrappers in one stack and 5 in the other (it will be easier to cut less at a time!).
+                        Fold the spring roll wrappers like a 3 sectioned letter. Thinly starting at one end, thinly slice the folded stack to create spring roll strips. Repeat the slicing with the other stack of wrappers. Place them all on a tray, or in a bowl.</p>
+                    <img class="steps-img" width="700" height="700" src="Img/rollpaper.png" alt="">
+                </div>
+
+                <div class="step-by-step">
+                    <p><strong>Step 6.         </strong>Once the shrimp paste is cold, divide into 9 even portions. Oil your hands so that it doesn’t stick, and roll each portion into a ball.
+                        Toss the shrimp ball in your cut spring roll strips. Pack them on so that the ball is entirely covered. 
+                        Repeat with all 9 shrimp balls.</p>
+                    <img class="steps-img" width="700" height="700" src="Img/Wrapit.png" alt="">
+                </div>
+
+                <div class="step-by-step">
+                    <p><strong>Step 7.         </strong>Fill a medium heavy bottomed pot with 1L of neutral oil (canola, vegetable) and turn the heat to medium high. 
+                        Allow the oil to get hot, roughly 350 degrees. 
+                        Once the oil has reached the desired temp, drop in your shrimp balls. Cook 3 at a time as to not overcrowd the pot. Heads up—They cook fast! Fry them for about 2-3 minutes or until golden. Remove them from the oil with a spider, or slotted spoon. Set them aside while you fry what’s remaining.</p>
+                    <img class="steps-img" width="700" height="700" src="Img/fry.png" alt="">
+                </div>
+                </div>
+            </div>
+            </div>
+            <div id="nutritions" class="footer-nutrition">
+                <div class="footer-nutrition-container">
+                    <div class="footer-nutrition-content">
+                        <div class="nutrition-items">
+                            <div class="nutrition-info">Calories</div>
+                            <div class="nutrition-value">247</div>
+                        </div>
+                        
+                        <div class="nutrition-items">
+                            <div class="nutrition-info">Fat</div>
+                            <div class="nutrition-value">15g</div>
+                        </div>
+                        <div class="nutrition-items">
+                            <div class="nutrition-info">Carbs</div>
+                            <div class="nutrition-value">10g</div>
+                        </div>
+                        <div class="nutrition-items">
+                            <div class="nutrition-info">Protein</div>
+                            <div class="nutrition-value">18g</div>
+                        </div>
+                        <div class="nutrition-infotext">
+                            <div class="nutrition-infotext-content">
+                                <p>This information refers to 100g. 1 Dim Sum contains round about 35g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-button-container">
+                 <div class="back-button-content">
+                     <a href="../Index.html"><button class="back-button">Back to Home</button></a>
+                 </div>
+            </div>
+
+         </div>
+    </section>
+
+</body>
+</html>

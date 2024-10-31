@@ -1,0 +1,462 @@
+*{
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fadadd;
+    width: 1800px;
+}
+
+/* Hier wird alles rund um Nav top und header bearbeitet */
+.nav-top{
+    width: 1700px;
+    height: 120px;
+    align-content: center;
+}
+
+.nav-container{
+    background-color: white;
+    width: 1700px;
+    height: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 150px;
+
+}
+
+.website-title{
+
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(84, 84, 84);
+    font-size: 55px;
+    font-weight: 900;
+    margin-left: 420px;
+    width: 300px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.nav-container ul {
+    list-style: none;
+
+    display: flex;
+    gap: 70px;
+    width: 250px;
+}
+
+.nav-container ul li a{
+    text-decoration: none;  
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 0.1cm;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.nav-link-top{
+
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link-top:hover {
+        color: grey;
+}
+
+.nav-container img{
+    left: 0;
+    margin-left: 30px;
+}
+
+.intro-text-section {
+    height: 750px;
+    width: 1700px;
+    background-color: black;
+    background-image: url(https://media.istockphoto.com/id/594077390/photo/bakery-ingredients-and-tools.jpg?s=612x612&w=0&k=20&c=f_c2Q1WPE9OCQ4YW0O2LAceScpABtquPAMGDSHjoIAQ=   );
+    background-size: cover;
+}
+
+/* In dieser Section wird alles zum Intro Bild und Text bearbeitet */
+.intro-text-container{
+    align-items: center;
+    height: 750px;
+    width: 1700px;
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+.intro-header{
+    color: white;
+    position: relative;
+    font-size: 70px;
+}
+
+.intro-text{
+    color: white;
+    margin-top: -30px;
+    font-size: 30px;
+}
+
+.intro-text-section figure .recipe-button{
+    width: 1700px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+section figure div a {
+    text-decoration: none;
+    font-size: 22px;
+    color: grey;
+    padding: 20px 40px 20px 40px;
+    background-color: rgb(218, 250, 247);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.view-recipe-button:hover{
+    background-color: rgb(180, 250, 255);
+    color: white;
+
+}
+
+/* Das hier ist die Recipe Section. Alles rund um das Rezept findest du hier */
+.recipe-section{
+    width: 1700px;
+    height: 2000px;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-container{
+    width: 1700px;
+    height: 5700px;
+}
+.recipe-nav-container{
+        background-color: white;
+        width: 1700px;
+        height: 100px;
+}
+
+.recipe-section .recipe-container
+.recipe-nav-container .recipe-nav{
+    width: 1700px;
+    height: 50px;
+    display: flex;
+    background-color: #fadadd;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.recipe-section .recipe-container
+.recipe-nav-container .recipe-nav ul{
+
+    list-style: none;
+    display: flex;
+    width: 526px;
+    padding: 0;
+    height: 50px;
+    align-items: center;
+    border: solid black 3px;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.recipe-section .recipe-container
+.recipe-nav-container .recipe-nav ul li a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 17.2px 42.6px 17px 40px;
+}
+
+#save-button{
+    background-color: rgb(218, 250, 247);
+    border-radius: 20px 0px 0px 20px;
+}
+
+#tips-button{
+    border-radius: 0px 20px 20px 0px;
+}
+
+.recipe-nav-container{
+    background-color: #fadadd;
+}
+
+.recipe-section .recipe-container
+.recipe-nav-container .recipe-nav ul li a:hover{
+    background-color: rgb(218, 250, 247);
+}
+
+
+
+.recipe-img-container{
+
+    width: 1700px;
+    background-color: #fadadd;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-img{
+    height: 500px;
+    width: 500px;
+}
+
+.recipe-details-container{
+
+width: 1700px;
+height: 350px;
+display: flex;
+justify-content: center;
+}
+
+    .recipe-details-content{
+        display: grid;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 500px;
+        height: 350px;
+        border: solid black 1px;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .recipe-items{
+        padding: 20px;
+        height: 30px;
+    }
+
+    .recipe-details-label{
+
+        font-size: 16px;    
+        background-color: rgb(218, 250, 247);
+        font-weight: bold;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    .recipe-details-value{
+
+        font-family:'Courier New', Courier, monospace;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .jump-to-nutrition-container{
+        display: flex;
+        justify-content: center;
+        width: 100px;
+    }
+
+    .jump-to-nutrition-content{
+        text-align: center;  
+        border-top: solid black 1px;
+        position: absolute;
+        width: 400px;
+        text-decoration: none;
+        color: gray;
+    }
+
+    .jump-to-nutrition-content:hover{
+        color: black;
+    }
+
+
+    .jump-to-nutrition-container a {
+
+
+        font-family:'Courier New', Courier, monospace;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .jump-to-nutrition-content:hover{
+        color: rgb(101, 101, 101);
+        cursor: pointer;
+    }
+
+    .main-recipe{
+        height: 1000px;
+        width: 1700px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+
+    .main-recipe-container {
+        text-align: center;
+        width: 600px;
+    }
+
+    .ingredients-list-container{
+        height: 1000px;
+        margin-top: 100px;
+        width: 800px;
+        text-align: left;
+    }
+.ingredients-head{
+        width: 800px;
+    }
+
+    div div .ingredients-list-container h1 {
+
+        font-size: 30px;
+        font-family:'Courier New', Courier, monospace;
+
+    }
+
+
+    div div .ingredients-list-container ul{
+        box-sizing: border-box;
+        text-align: left;
+    }
+    
+    div div .ingredients-list-container ul li{
+
+        letter-spacing: 0.009cm;
+        line-height: 70px;
+        font-size: 15px;
+    }
+
+    strong {
+        font-weight: bolder;
+        font-size: 20px;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    .recipe-steps{
+        width: 1700px;
+        height: 3050px;    
+        display: flex;
+        justify-content: center;
+    }
+
+    .recipe-steps-container{
+        width: 1400px;
+        height: 3000px;
+        display: flex;
+        justify-content: center;
+    }
+    .step-by-step{
+        width: 1000px;
+    }
+
+    .recipe-steps-content{
+        margin-top: 30px;
+        display: block;
+        width: 800px;
+        height: 3000px;
+    }
+
+    .steps-img{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 800px;
+    }
+
+    .recipe-steps .recipe-steps-container .recipe-steps-content .step-by-step strong{
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+        .recipe-steps .recipe-steps-container .recipe-steps-content .step-by-step p{
+            font-size: 18px;
+            font-family:'Courier New', Courier, monospace;  
+        }
+
+        .footer-nutrition{
+            width: 1600px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-nutrition-container{
+            height: 300px;
+            width: 800px;
+            justify-content: center;
+            display: flex;
+        }
+
+        .footer-nutrition-content{
+            height: 300px;
+            border-top: solid black 2px;
+            width: 800px;
+            display: grid;
+            grid-gap: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 30px;
+        }
+
+        .nutrition-items{
+            gap: 60px;
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+        }
+        .nutrition-info{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nutrition-value{
+            font-size: 15px;    
+        }
+
+        .nutrition-infotext{
+            position: absolute;
+            width: 800px;
+            height: 200px;
+            margin-top: 130px;
+            text-align: center;
+        }
+
+        .nutrition-infotext-content{
+            width: 600;
+            height: 170px;
+            margin-left: 10px;
+            margin-top: 10px;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 20px;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 1cm;
+        }
+
+        .back-button-container{
+            width: 1700px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .back-button-content{
+
+            width: 450px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .back-button{
+            background-color: #DAFAF7;
+            padding: 20px 20px 20px 20px;
+            cursor: pointer;
+            width: 250px;
+            position: relative;
+            height: 70px;
+        }
+
+        .back-button:hover{
+            background-color: rgb(180, 250, 255);
+        }
+
+
+
+
+
+

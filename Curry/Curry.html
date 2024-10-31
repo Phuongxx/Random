@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="Curry.css">
+</head>
+<body>
+
+    <!-- Header der Webseite. Behinhaltet Cookie Logo, Cookies Überschrift
+    und die beiden Nav links oben -->
+    <header>
+        <nav class="nav-top">
+            <div class="nav-container">
+                <img width="80px" height="80px" src="data:image/png;base64,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" alt="">
+                <h1 class="website-title">Japanese Curry</h1>
+                <ul>
+                    <li><a class="nav-link-top" href="#nutritions">Nutritions</a></li>
+                    <li><a class="nav-link-top" href="#directions">Recipe</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!--Erstes Bild der Webseite, bestehend aus dem Background image und den Text,
+mit der passenden Überschrift. Dazu kommt noch der View Recipe Button-->
+    <section class="intro-text-section">  
+        <figure class="intro-text-container">
+            <h1 class="intro-header">Sanji's Japanese Curry</h1>
+            <p class="intro-text">You are here to experience the Japanese Curry</p>
+            <div class="recipe-button">
+                    <a href="" class="view-recipe-button">View Recipe</a>
+            </div>
+        </figure>
+    </section>
+<!-- diese Section wird das Rezept mit samt dem Cookie Bild darstellen -->
+    <section class="recipe-section">
+        <div class="recipe-container">
+             <div class="recipe-nav-container">
+                 <nav class="recipe-nav">
+                     <ul>
+                         <li><a id="save-button"  class="recipe-nav-link" href="">Save</a></li>
+                         <li><a class="recipe-nav-link" href="#Ingredients">Ingredients</a></li>
+                         <li><a class="recipe-nav-link" href="#directions">Recipe</a></li>
+                         <li><a id="tips-button" class="recipe-nav-link" href="#nutritions">nutritions</a></li>
+                     </ul>
+                 </nav>
+             </div>
+        <div class="recipe-img-container"><img class="recipe-img" src="https://cdn.shopify.com/s/files/1/0506/4058/4857/files/IMG_2147_97069f52-f29e-4bf1-95e5-0df1e4c9f174_480x480.jpg?v=1629782519" alt=""></div>
+        
+         <div class="recipe-details-container">
+             <div class="recipe-details-content">
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Prep Time:</div>
+                    <div class="recipe-details-value">30 mins</div>
+                </div>
+
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Cook Time:</div>
+                    <div class="recipe-details-value">70 mins</div>
+                </div>
+
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Total Time:</div>
+                    <div class="recipe-details-value">90 mins</div>
+                </div>
+
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Serving:</div>
+                    <div class="recipe-details-value">8 Person</div>
+                </div>
+
+                <div class="recipe-items">
+                    <div class="recipe-details-label">Taste:</div>
+                    <div class="recipe-details-value">10/10</div>
+                </div>
+                <div class="recipe-items">
+                    <div class="recipe-details-label"></div>
+                    <div class="recipe-details-value"></div>
+                </div>
+                <div class="jump-to-nutrition-container">
+                    <span><a class="jump-to-nutrition-content" href="#nutritions">Jump to Nutrition</a></span>
+                </div>
+              </div>
+         </div>
+         <div class="main-recipe">
+            <div class="main-recipe-container">
+             <div class="ingredients-list-container">
+                <div class="ingredients-head">
+            <h1 id="Ingredients">Sanji's japanese Curry Ingredients</h1>
+            <p>These are the ingredients you’ll need to make this Japanese Curry recipe:</p>
+        </div>
+            <ul class="ingredient-list">
+                <li><strong>Chicken:  </strong> Boneless Chicken Thigh (500g) or any meat of choice*, chopped and seasoned with salt and pepper </li>
+                <li><strong>Chicken Stock:  </strong> 700ml Chicken Stock (I used 1 x Oxo Stock Cube) </li>
+                <li><strong>Onion:  </strong> 1 Large Onion (or 2 Smaller Onions), diced </li>
+                <li><strong>Celery:  </strong> 1 Celery Stalk, finely diced     </li>
+                <li class="leaveners"><strong>Leaveners:  </strong> 2 Cloves Garlic, minced </li>
+                <li><strong>Ginger:  </strong> 1 Knob of Ginger (10g), minced </li>
+                <li><strong>Potatoes:  </strong> 2 Potatoes, chopped           </li>
+                <li><strong>Carrots:  </strong> 2 Carrots, chopped. </li>
+                <li><strong>Tomatoes:  </strong> 2 Tomatoes, diced  . </li>
+                <li><strong>Cornstarch:  </strong> Cornstarch. </li>
+                <li><strong>Curry Powder:  </strong> Curry Powder (Gregg’s). </li>
+                <li><strong>Garam Masala:  </strong> Garam Masala (Gregg’s).</li>
+                <li><strong>Bay Leaves:  </strong> Bay Leaves  . </li>
+                <li><strong>Butter:  </strong> Butter. </li>
+                <li><strong>Oil:  </strong> Oil. </li>
+                <li><strong>salt:  </strong> salt.</li>
+                <li><strong>Pepper:  </strong> Pepper. </li>
+                <li><strong>Honey:  </strong> Honey. </li>
+                <li><strong>Jasmin rice:  </strong> Rice (about 3 cups) - please remember to prepare the rice separately as it’s not included in the method below. </li>
+            </ul>
+            </div>
+            </div>
+         </div>
+         <div class="recipe-steps">
+            <div class="recipe-steps-container">
+                <div class="recipe-steps-content">
+                <div class="step-by-step">
+                    <h1 id="directions">Directions</h1>
+                    <p><strong>Step 1.         </strong>In a frying pan on medium-high heat, cook the chopped meat with some butter until lightly seared then put aside..</p>
+                </div>
+                <div class="step-by-step">
+                    <p><strong>Step 2.         </strong>In the same pan cook the potatoes and carrots with some butter until slightly golden on the outside then also put aside..</p>
+                </div>
+                <div class="step-by-step">
+                    <p><Strong>Step 3.         </Strong>In a large pot on medium heat, cook the garlic and ginger in about a tablespoon of oil until fragrant, then add the onions and celery to the pot..</p>
+                    
+                </div>
+                <div class="step-by-step">
+                    <p><strong>Step 4.         </strong>Once the onions and celery are soft, add about ½ tablespoon of honey and cook until slightly golden in colour..
+                    </p>
+                    
+                </div>
+                <div class="step-by-step">
+                    <p><strong>Step 5.         </strong>Turn down the heat to low. Add 2 tablespoons of oil, 3 tablespoons of curry powder, 3 tablespoons of cornstarch, and ½ tablespoon of garam masala. Stir and cook for about 5 min. It should turn into a thick paste.</p>
+                    
+                </div>
+                <div class="step-by-step">
+                    <p><Strong>Step 6.         </Strong>To the curry paste you just made, add the diced tomatoes, stir and cook for another 2-3 mins.</p>
+                    
+                </div>
+                <div class="step-by-step">
+                    <p><strong>Step 7.         </strong>Add the stock to the pot slowly and mix well.
+                    </p>
+                   
+                </div>
+                <div class="step-by-step">
+                    <p><strong>Step 8.         </strong>Add the pre-cooked meat and vegetables, generous amount of salt, and 2 bay leaves to the pot. The stock should be just covering all the goodies (if not add boiling water). Simmer on low heat for 30-40mins. Make sure to check on it and stir every now and then so the curry doesn’t stick to the bottom of the pot as it thickens. </p>
+                    
+                </div>
+                <div class="step-by-step">
+                    <p><Strong>Step 9.         </Strong>Once the vegetables and meat are tender cooked through, add salt to taste and take off the heat. You can also add more garam masala or chilli to taste if you like.</p>
+                    
+                </div>
+                <div class="step-by-step">
+                    <p><strong>Step 10.         </strong>Pour the curry over a plate of rice and voilà! You’ve just made a tasty Japanese curry from scratch! 
+                    </p>
+                    
+                </div>
+                </div>
+            </div>
+            </div>
+            <div id="nutritions" class="footer-nutrition">
+                <div class="footer-nutrition-container">
+                    <div class="footer-nutrition-content">
+                        <div class="nutrition-items">
+                            <div class="nutrition-info">Calories</div>
+                            <div class="nutrition-value">501</div>
+                        </div>
+                        
+                        <div class="nutrition-items">
+                            <div class="nutrition-info">Fat</div>
+                            <div class="nutrition-value">13g</div>
+                        </div>
+                        <div class="nutrition-items">
+                            <div class="nutrition-info">Carbs</div>
+                            <div class="nutrition-value">72g</div>
+                        </div>
+                        <div class="nutrition-items">
+                            <div class="nutrition-info">Protein</div>
+                            <div class="nutrition-value">24g</div>
+                        </div>
+                        <div class="nutrition-infotext">
+                            <div class="nutrition-infotext-content">
+                                <p>This information refers to portion of Rice with Curry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-button-container">
+                 <div class="back-button-content">
+                     <a href="../Index.html"><button class="back-button">Back to Home</button></a>
+                 </div>
+            </div>
+
+         </div>
+    </section>
+
+</body>
+</html>
